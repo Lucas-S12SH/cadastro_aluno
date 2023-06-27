@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Aluno</title>
+</head>
+<body>
+    <h1>Detalhes do Aluno</h1>
+    {% if aluno %}
+        <p><strong>Nome:</strong> {{ aluno['nome'] }}</p>
+        <p><strong>Idade:</strong> {{ aluno['idade'] }}</p>
+        <p><strong>Curso:</strong> {{ aluno['curso'] }}</p>
+    {% else %}
+        <p>Aluno não encontrado.</p>
+    {% endif %}
+</body>
+</html>
